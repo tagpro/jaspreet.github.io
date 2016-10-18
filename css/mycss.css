@@ -1,0 +1,540 @@
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url('robot.woff') format('woff');
+}
+
+*{
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+	background-color: #f5f5f5;
+	line-height: normal;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+.jmessage{
+	display: inline-block;
+	text-align: center;
+
+}
+.jmessageq{
+	display: none;
+}
+
+
+.jmain{
+	font-size: 50px;
+}
+.jinside{
+	text-align: center;
+}
+
+.tik_inside{
+	-webkit-transition: width 0.5s;
+	transition: width 0.5s;
+}
+
+.tik_inside:hover{
+	width: 100%;
+}
+
+.jtabs{
+	border: 1px solid #008cba;
+	border-bottom-width: 0;
+	width: 25%;
+	cursor: pointer;
+	float: left;
+}
+
+
+.jdis{
+	float: left;
+	margin: auto;
+	width: 74%;
+	
+}
+.jltab{
+	padding: 4% 2%;
+	border-bottom:1px solid #008cba ;
+	background-color: white;
+	color: black;
+	vertical-align: baseline;
+}
+
+.jrtab{
+	line-height: 40px;
+	display: none;
+	margin: auto;
+	-webkit-transition: height 0.3s, width 0.5s ease-in;
+	transition: height 0.3s, width 0.5s ease-in;
+}
+
+
+
+.disp{
+	-webkit-animation:animefr 0.5s forwards;
+	animation:animefr 0.5s forwards;
+	display: block;
+}
+
+@-webkit-keyframes animefr{
+	from{-webkit-transform:scale(0,0);}
+	to{-webkit-transform:scale(1,1); }
+}
+
+@keyframes animefr{
+	from{transform:scale(0,0);}
+	to{transform:scale(1,1);}
+}
+
+.disp2{
+	display: inline-block;
+	color: white;
+	margin: auto;
+	-webkit-animation:animefrq 0.5s forwards;
+	animation:animefrq 0.5s forwards;
+}
+
+.disp3{
+	display: inline-block;
+	color: white;
+	margin: auto;
+	-webkit-animation:animefrq 0.5s forwards;
+	animation:animefrq 0.5s forwards;	
+}
+
+.disp4{
+	display: inline-block;
+	color: white;
+	margin: auto;
+	-webkit-animation:animefrq 0.5s forwards;
+	animation:animefrq 0.5s forwards;
+}
+
+.jrtab4{
+	width: 65%;
+	padding: 2%;
+}
+a{
+	text-decoration: none;	
+}
+
+@-webkit-keyframes animefrq{
+	from{-webkit-transform:scale(0,0);}
+	to{-webkit-transform:scale(1,1);}
+}
+@keyframes animefrq{
+	from{transform:scale(0,0);}
+	to{transform:scale(1,1);}
+}
+
+
+.disprem{
+	-webkit-animation:animefrem 0.5s forwards;
+	animation:animefrem 0.5s forwards;
+}
+
+@-webkit-keyframes animefrem{
+	from{-webkit-transform:scale(1,1);}
+	to{-webkit-transform:scale(0,0);display: none;}
+
+}
+
+@keyframes animefrem{
+	from{transform:scale(1,1);}
+	to{transform:scale(0,0);display: none;}
+
+}
+
+.jactive{
+	-webkit-animation: jcol 1s forwards;
+	animation: jcol 1s forwards;
+
+}
+
+@-webkit-keyframes jcol{
+	from{
+		background-color: white;
+		color: #008cba;}
+	to{
+	background-color: #333;
+	color: white;}
+}
+
+@keyframes jcol{
+	from{
+		background-color: white;
+		color: #008cba;}
+	to{
+	background-color: #333;
+	color: white;}
+}
+
+.jtable{
+	line-height: 25px;
+	margin: auto;	
+}
+
+*,ul,ol,dl{
+	margin: 0;
+	padding: 0;
+}
+
+.jheader{
+	background-color: white;
+	
+	z-index: 1;
+	top: 0;
+	border-bottom:2px solid #e0e0e0;
+	font-size: 25px;
+	font-weight: 300px;
+	width: 100%;
+	/*height: 90px;*/
+	-webkit-transition: height 0.3s ;
+	transition: height 0.3s ;
+}
+
+.nfixed{
+    position: fixed; 
+    top: 0; 
+    z-index: 1; 
+}
+
+
+.navul{
+	display: inline-block;
+	float: right;
+}
+
+
+#things_i_know{
+	overflow: visible;
+	height: 40vh;
+}
+
+ .jleft{
+ 	display: inline-block;
+ 	margin-left: 30px;
+ 	list-style-type: none;
+ }
+.jleft li a{
+	display: inline-block;
+	color: white;
+	font-size: 20px;
+	background-color: #008cba;
+	padding: 28px;
+	line-height: 32px;
+	-webkit-transition: padding 0.3s;
+	transition: padding 0.3s;
+}
+
+.lfixed li a{
+	padding: 8px;
+}
+
+
+.contain , .my-name{
+	display: inline-block;
+}
+
+.jright li{
+	display: inline-block;
+	background-color: #f5f5f5;
+	
+}
+.jright li a{
+	display: inline-block;
+	padding: 30px;
+	padding-top: 15px;
+	border-top:10px solid #008cba;
+	background-color: white;
+	text-decoration: none;
+	color: #008cba;
+	-webkit-transition:border-top 0.6s, color 0.4s, -webkit-transform ease-in 0.1s, background-color linear 0.3s, padding 0.3s, padding-top 0.3s, border-top-width 0.3s;
+	transition:border-top 0.6s, color 0.4s, transform ease-in 0.1s, background-color linear 0.3s, padding 0.3s, padding-top 0.3s, border-top-width 0.3s;
+}
+
+
+.jright li a:hover{
+	background-color: #008cba;
+	color: white;
+	border-top: 10px solid white;	
+	-webkit-transform:scale(1.1,1.1);
+	transform:scale(1.1,1.1);
+}
+
+.rfixed li a{
+	padding: 10px;
+	padding-top: 0; 
+	border-top-width: 5px; 
+}
+.rfixed li a:hover{
+	border-top: 5px solid white;	
+}
+
+.jselected li a{
+	background-color: #333;
+	color: white;
+}
+.jselected li a:hover{
+	background-color: #008cba;
+}
+.jfont{
+	font-size: 18px;
+}
+
+.jsection{
+	display: inline-block;
+	background-color: white;
+	padding: 8% 4%;
+	margin-top: 10%;
+	width: 92%;
+	box-shadow: 0 0 5px #888888;
+	-webkit-transition: background-color ease-in-out 0.3s, color ease-in 0.3s, -webkit-transform 0.5s, padding 0.5s, height 0.3s;
+	transition: background-color ease-in-out 0.3s, color ease-in 0.3s, transform 0.5s, padding 0.5s, height 0.3s;
+}
+.jsection:hover{
+	padding:12% 4%;
+	background-color: #008cba;
+	color:white;
+	/*-webkit-transform:scale(1.05,1.05);*/
+}
+
+.navul{
+	margin: 0 10px;
+}
+
+.toggle-right{
+	display: none;
+}
+
+#first{
+	margin-left: 0;
+}
+
+ul{
+	-webkit-margin-before: 0em;
+-webkit-margin-after: 0em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 0px;
+
+
+margin-before: 0em;
+margin-after: 0em;
+margin-start: 0px;
+margin-end: 0px;
+padding-start: 0px;
+}
+
+
+@media only screen and (max-width: 950px) {	
+
+	.aside{
+		display: none;
+	}
+
+	.jsection{
+		display: block;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+	.jleft{
+		margin-left: 10px;
+	}
+	.toggle-right{
+		display: inline-block;
+		float: right;
+	}
+
+	.jright li a{
+		padding: 5px 10px 10px;
+		border-top-width: 5px;
+	}
+	.jright li a:hover{
+		border-top-width: 5px;
+	}
+
+	.jleft li{
+		padding:10px 30px;
+	}
+
+	nav{
+		width: 100%;
+	}
+	.navul{
+		float: none;
+	}
+}
+
+
+.jf{
+	margin: 15px 10%;
+	width: 80%;
+	color: white;
+
+	/*border-radius: 3px;*/
+	padding: 10px;
+	background-color: #008cba;
+	margin-bottom: 0;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: -webkit-transform 0.3s;
+}
+
+.jf:hover{
+	-webkit-transform:scale(1.2,1.2);
+/*	margin-top:0;
+	margin-bottom: 30px;
+*/
+	
+
+
+}
+.jfor{
+	display: inline-block;
+	padding: 10px;
+	line-height: 40px;
+}
+
+
+footer{
+	margin-top: 30px;
+	background-color: white;
+	background-color:#333;
+	width: 92%;
+	padding: 4%;
+	position: relative;
+	clear: both;
+	height:500px;
+
+}
+
+.junder{
+	text-decoration: underline;
+}
+#my_table{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size:12px;width:480px;text-align:left;
+	border-collapse:collapse;
+	border:1px solid #69c;
+	margin:20px;
+}
+
+ol section li{
+	display: inline-block;
+	margin:0 30px;
+	width: 60px;
+	line-height: 40px;
+}
+.jtable th{
+	font-weight:normal;
+	font-size:14px;
+	padding:15px 10px 10px;
+}
+
+.jtable tbody{
+		background:#e8edff;
+}
+
+.jtable td{
+		border-top:1px dashed #fff;
+		padding:10px;
+		}
+.jtable tbody tr:hover td{
+	background:#d0dafd;
+}
+
+.jtable{
+	background-color: white;
+	color: black;
+
+}
+.jtable td{
+	padding: 10px;
+}
+
+
+.row{
+	width: 100%;
+	max-width: 1000px;
+	margin: 5% auto;
+	clear: both;
+
+}
+
+.contact_wrapper{
+	width: 100%;
+	clear: both;
+	height: 50%;
+	margin-bottom: 5%;
+}
+
+.social{
+	clear: both;
+	display: block;
+	padding: 0%;
+	width: 100%;
+	margin-top: 0 auto;
+	max-width: 1000px;
+}
+
+.jsocial{
+	float: left;
+	clear: both;
+}
+
+
+.small-4{
+	width: 33%;
+	float: left;
+	margin: auto;
+}
+
+
+.jfootr{
+	float: right;
+}
+
+#getcolor{
+	font-size:32px;
+	display:inline-block; 
+	color:inherit;
+	margin-left:50px;
+}
+
+.jclaim{
+	color: white;
+	display: block;
+	width: 80%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.jclaim p{
+	display: block;
+	text-align: center;
+	color: white;
+	font-family: 'roboto';
+}
+
+.jsocial {
+	margin: 0% 5%;
+	width: 40%
+}
+
+nav{
+	width: 100%;
+}
+*{
+	max-width: 100%;
+}
+
+body{
+	max-width: 100%;
+}
